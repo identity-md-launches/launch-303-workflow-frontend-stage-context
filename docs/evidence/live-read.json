@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-09-27T06:59:15.582Z",
+  "mode": "Read-only public RPC; no wallet; no broadcast",
+  "chainId": 11155111,
+  "poolId": "0x952f9be5d434ae962ee6744968896438fbb0b1cca96159fca56ec094ec0745ed",
+  "verification": "Chain ID, code presence on both attested contracts and required protocol contracts, hook/StateView PoolManager bindings passed",
+  "snapshot": {
+    "block": "11791691",
+    "timestamp": "1790492352",
+    "opensAt": "11791632",
+    "sellsOpen": true,
+    "window": "300",
+    "sqrtPrice": "560227709747861399187319382274582",
+    "tick": 177284,
+    "lpFee": 3000,
+    "liquidity": "0",
+    "decimals": 18,
+    "symbol": "OWLN",
+    "totalSupply": "1000000000000000000000000000",
+    "secondsPerBlock": 12.12,
+    "blockTimeSampled": true,
+    "fetchedAt": 1790492355799
+  },
+  "events": [
+    {
+      "blockNumber": "11791332",
+      "transactionHash": "0x52d7b1e354c5cbf13b85904f27028908ee58371563d665e4e9b9dce9c2b6bd0a",
+      "opensAt": "11791632"
+    }
+  ],
+  "buyQuote": {
+    "inputWei": "1000000000000",
+    "output": "49630160823989818792"
+  },
+  "buyExecutionSimulation": {
+    "result": "PASS",
+    "method": "eth_call only",
+    "from": "0x09ec38170e94532eddb57c69dfc4f1fdcd0d4a60",
+    "router": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+    "valueWei": "1000000000000",
+    "slippageBps": 50
+  }
+}

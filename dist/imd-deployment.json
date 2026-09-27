@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "launchId": "d2e637f2-10d7-48d9-90e7-9db146088506",
+  "chainId": 11155111,
+  "sourceCommit": "05ca781a8b9b5bc3b70c41c3ed239a79b00ec8c2",
+  "attestationHash": "6a59986ab05057f72e01d56b678f1a8511a91bfffbdf1aa22b8885a287f56dba",
+  "contracts": [
+    {
+      "name": "OWLN",
+      "address": "0x6962c22809a04681907e7f7e0281879900d5f0be",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "abiPath": "abi/OWLN.json"
+    },
+    {
+      "name": "BuyOnlyWindowHook",
+      "address": "0x42e94ee3505bcccace2e825092fc0877bbd61080",
+      "abiHash": "da62f4d391653b0b46f20d5bb1f25c872d1f3c810e4c78fad4efe1561ef1f0d2",
+      "abiPath": "abi/BuyOnlyWindowHook.json"
+    }
+  ],
+  "assets": [
+    {
+      "path": "abi/BuyOnlyWindowHook.json",
+      "sha256": "f92f4c3ab1788704006c2bdd23c678c93d01c12243cabf6d8ad916480c759d2f"
+    },
+    {
+      "path": "abi/OWLN.json",
+      "sha256": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542"
+    },
+    {
+      "path": "abi/Permit2.json",
+      "sha256": "d4bcbe027f32a4ebf9a04dc122c332155bdb166d0f80278869d121dd30f11731"
+    },
+    {
+      "path": "abi/StateView.json",
+      "sha256": "562a268d84311dfa9e9266acf52b9821dc5f75843681a7ecc87ed4e8d3650b72"
+    },
+    {
+      "path": "abi/UniversalRouter.json",
+      "sha256": "885a93ec49aed4a34f329d628429c797a6af429707c8f3f928a10d27388b12b9"
+    },
+    {
+      "path": "abi/V4Quoter.json",
+      "sha256": "7f7fc4ea986a47c4fa51210389fe1d8799df5c506433644676d1b34e29256653"
+    },
+    {
+      "path": "assets/ccip-CS5Btq8O.js",
+      "sha256": "cdfa9a4ff98fe02b2a6a32a46fdd66ad262e4f803f2357c511f091c9951807a8"
+    },
+    {
+      "path": "assets/index-D7g-Ted-.js",
+      "sha256": "c35a847851738f6ea0db4928d7e6a12508229dcc6e9971cfb6cd8c5818faed30"
+    },
+    {
+      "path": "assets/index-qtP6OW4d.css",
+      "sha256": "1af0d4d1c12ab9c9d5257efe386edb548fc73651360adb0e1d006db4e66345e8"
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "f1999f1d2005ae881c912a22f8ea2af63231c5f8588dc485ec7e106935db8b2b"
+    },
+    {
+      "path": "index.html",
+      "sha256": "fc0b6e3ab5c3efb6f09abc0c5914f012d8dd865961fb6cc5a31f46d52fb7333b"
+    }
+  ],
+  "network": {
+    "chainId": 11155111,
+    "name": "Sepolia",
+    "testnet": true,
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "explorer": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [
+      "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+      "https://www.alchemy.com/faucets/ethereum-sepolia"
+    ],
+    "uniswapV4": {
+      "poolManager": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "universalRouter": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+      "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "stateView": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+      "positionManager": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0xaa36a7",
+    "chainName": "Sepolia",
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://sepolia.etherscan.io"
+    ]
+  },
+  "pool": {
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336000",
+    "pairedCurrency": "0x0000000000000000000000000000000000000000"
+  },
+  "token": {
+    "name": "Oneway Launch",
+    "symbol": "OWLN",
+    "contract": "OWLN",
+    "decimals": 18
+  },
+  "hook": {
+    "contract": "BuyOnlyWindowHook"
+  },
+  "deploymentBlock": 11791332,
+  "protocolAbis": {
+    "stateView": "abi/StateView.json",
+    "quoter": "abi/V4Quoter.json",
+    "universalRouter": "abi/UniversalRouter.json",
+    "permit2": "abi/Permit2.json"
+  }
+}

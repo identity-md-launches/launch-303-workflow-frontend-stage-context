@@ -1,0 +1,55 @@
+[
+  {
+    "name": "execute",
+    "type": "function",
+    "stateMutability": "payable",
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "commands"
+      },
+      {
+        "type": "bytes[]",
+        "name": "inputs"
+      },
+      {
+        "type": "uint256",
+        "name": "deadline"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "ExecutionFailed",
+    "type": "error",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "commandIndex"
+      },
+      {
+        "type": "bytes",
+        "name": "message"
+      }
+    ]
+  },
+  {
+    "name": "V4TooLittleReceived",
+    "type": "error",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "minAmountOutReceived"
+      },
+      {
+        "type": "uint256",
+        "name": "amountReceived"
+      }
+    ]
+  },
+  {
+    "name": "TransactionDeadlinePassed",
+    "type": "error",
+    "inputs": []
+  }
+]

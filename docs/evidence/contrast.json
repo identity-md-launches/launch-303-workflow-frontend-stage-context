@@ -1,0 +1,50 @@
+[
+  {
+    "selector": ".intro-copy",
+    "color": "rgb(96, 100, 91)",
+    "background": "rgb(245, 244, 239)",
+    "ratio": 5.49
+  },
+  {
+    "selector": ".risk-note p",
+    "color": "rgb(89, 64, 31)",
+    "background": "rgb(242, 233, 221)",
+    "ratio": 8.02
+  },
+  {
+    "selector": ".window-panel h2",
+    "color": "rgb(242, 244, 232)",
+    "background": "rgb(39, 59, 43)",
+    "ratio": 10.81
+  },
+  {
+    "selector": ".estimate",
+    "color": "rgb(194, 205, 187)",
+    "background": "rgb(39, 59, 43)",
+    "ratio": 7.3
+  },
+  {
+    "selector": ".form-hint",
+    "color": "rgb(96, 100, 91)",
+    "background": "rgb(255, 255, 255)",
+    "ratio": 6.05
+  },
+  {
+    "selector": ".primary",
+    "color": "rgb(32, 36, 30)",
+    "background": "rgb(216, 239, 131)",
+    "ratio": 12.45
+  },
+  {
+    "selector": ".quote-review",
+    "color": "rgb(32, 36, 30)",
+    "background": "rgb(239, 239, 233)",
+    "ratio": 13.65
+  },
+  {
+    "selector": ".metrics p",
+    "color": "rgb(96, 100, 91)",
+    "background": "rgb(245, 244, 239)",
+    "ratio": 5.49
+  }
+]

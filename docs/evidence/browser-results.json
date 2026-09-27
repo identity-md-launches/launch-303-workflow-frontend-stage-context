@@ -1,0 +1,67 @@
+{
+  "executedAt": "2026-09-27T07:03:42.125Z",
+  "browser": "153.0.8010.12",
+  "mode": "Built production export under /preview/; mocked wallet and RPC; no broadcast",
+  "results": [
+    {
+      "name": "Gateway subpath, disconnected live reads, event and responsive reflow",
+      "result": "PASS",
+      "durationMs": 955
+    },
+    {
+      "name": "Missing wallet and wallet rejection are visible and recoverable",
+      "result": "PASS",
+      "durationMs": 725
+    },
+    {
+      "name": "Unknown chain: switch, exact wallet_addEthereumChain, switch again",
+      "result": "PASS",
+      "durationMs": 655
+    },
+    {
+      "name": "Locked buy: input validation, acknowledgement, simulation and native ETH send",
+      "result": "PASS",
+      "durationMs": 906
+    },
+    {
+      "name": "Sell: exact ERC20 approval, exact expiring Permit2 approval, then swap",
+      "result": "PASS",
+      "durationMs": 1128
+    },
+    {
+      "name": "Sells become enabled at exactly opensAt and zero active liquidity does not mask a quote",
+      "result": "PASS",
+      "durationMs": 1005
+    },
+    {
+      "name": "Quote invalidates on amount, slippage, account and chain changes; expired quotes cannot sign",
+      "result": "PASS",
+      "durationMs": 1333
+    },
+    {
+      "name": "Failed simulation and rejected signature never broadcast",
+      "result": "PASS",
+      "durationMs": 843
+    },
+    {
+      "name": "Missing code, uninitialized pool, failed RPC and ABI tampering fail closed",
+      "result": "PASS",
+      "durationMs": 1768
+    },
+    {
+      "name": "Event failure is distinguished from absent events and can be retried",
+      "result": "PASS",
+      "durationMs": 473
+    },
+    {
+      "name": "Keyboard path, visible focus, reduced motion and measured rendered contrast",
+      "result": "PASS",
+      "durationMs": 726
+    },
+    {
+      "name": "Slow RPC reads do not overlap polling cycles or suppress completed results",
+      "result": "PASS",
+      "durationMs": 436
+    }
+  ]
+}

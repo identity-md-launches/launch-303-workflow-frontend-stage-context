@@ -1,0 +1,41 @@
+{
+  "viewport": 320,
+  "scrollWidth": 320,
+  "controls": [
+    {
+      "name": "Connect wallet ↗",
+      "width": 128.75,
+      "height": 44
+    },
+    {
+      "name": "Refresh pool ↻",
+      "width": 91.4375,
+      "height": 44
+    },
+    {
+      "name": "Buy OWLN ↗",
+      "width": 118,
+      "height": 44
+    },
+    {
+      "name": "Sell OWLN ↙",
+      "width": 118,
+      "height": 44
+    },
+    {
+      "name": "amount",
+      "width": 147,
+      "height": 49.59375
+    },
+    {
+      "name": "slippage",
+      "width": 56,
+      "height": 44
+    },
+    {
+      "name": "Connect wallet to trade ↗",
+      "width": 248,
+      "height": 51.6875
+    }
+  ]
+}

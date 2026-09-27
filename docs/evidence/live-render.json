@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-09-27T07:07:57.580Z",
+  "browser": "153.0.8010.12",
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 900,
+      "scrollWidth": 900
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320
+    }
+  ],
+  "errors": [],
+  "resources": [
+    {
+      "path": "",
+      "status": 200
+    },
+    {
+      "path": "assets/index-qtP6OW4d.css",
+      "status": 200
+    },
+    {
+      "path": "assets/index-D7g-Ted-.js",
+      "status": 200
+    },
+    {
+      "path": "imd-deployment.json",
+      "status": 200
+    },
+    {
+      "path": "favicon.svg",
+      "status": 200
+    },
+    {
+      "path": "abi/OWLN.json",
+      "status": 200
+    },
+    {
+      "path": "abi/BuyOnlyWindowHook.json",
+      "status": 200
+    },
+    {
+      "path": "abi/StateView.json",
+      "status": 200
+    },
+    {
+      "path": "abi/V4Quoter.json",
+      "status": 200
+    },
+    {
+      "path": "abi/UniversalRouter.json",
+      "status": 200
+    },
+    {
+      "path": "abi/Permit2.json",
+      "status": 200
+    }
+  ]
+}

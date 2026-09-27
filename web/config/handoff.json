@@ -1,0 +1,53 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-268-buyonlywindowhook",
+  "version": 1,
+  "launchId": "d2e637f2-10d7-48d9-90e7-9db146088506",
+  "manifest": {
+    "hook": {
+      "contract": "BuyOnlyWindowHook",
+      "permissions": [
+        "afterInitialize",
+        "beforeSwap"
+      ],
+      "constructorArgs": [
+        "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336000",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Describes src/BuyOnlyWindowHook.sol and src/OWLN.sol for the approved Sepolia launch. The hook's sole constructor argument is the approved Sepolia PoolManager; OWLN has a zero-argument constructor. The pool sorts native ETH as currency0 and OWLN as currency1. initialPrice is decimal sqrtPriceX96, equal to 1000 * 2^96, giving 1,000,000 OWLN per ETH with 18 decimals on both sides. This adopts the price in test/helpers/LaunchParameters.sol used by the local one-sided OWLN seed and first-buy rehearsal; the approved workflow supplies no numeric price. Only afterInitialize and beforeSwap are enabled; all other permissions are false. The constructor validates permissions, requiring a mined hook address with low 14 bits 0x1080. Both callbacks require the immutable PoolManager. Native-ETH initialization records opensAt[poolId] = block.number + 300 and emits WindowSet. Before that block, token-to-ETH swaps revert with SellsLocked(opensAt) for both exact input and exact output; buys are allowed. Sells pass at exactly opensAt. Allowed swaps return zero delta and zero fee override: the hook charges nothing, while the pool's 0.3% LP fee applies. There are no liquidity or donation callbacks, so liquidity can be added or removed during the window. Each native-ETH pool has its own window; non-native-ETH pools have no window or gating. opensAt and sellsOpen expose the block-based state; sellsOpen is also true for unknown pools and does not prove liquidity or pool existence. The hook has no admin, setter, pause, upgrade or sweep. Blocking sells is the mechanism honeypots use; this is a disclosed, fixed 300-block test, visible on-chain before buying. Local rehearsal evidence does not establish live factory execution or independent review. This manifest is a technical description; deployment policy and signed artifact linkage are supplied separately by services.",
+    "token": {
+      "name": "Oneway Launch",
+      "symbol": "OWLN",
+      "contract": "OWLN",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "OWLN",
+      "txHash": "0x52d7b1e354c5cbf13b85904f27028908ee58371563d665e4e9b9dce9c2b6bd0a",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0x6962c22809a04681907e7f7e0281879900d5f0be",
+      "blockNumber": 11791332,
+      "creationCodeHash": "055f783f2db3c4ba220990532fb6ec90daef7fffd7a7573fec47f88d921c4f5f"
+    },
+    {
+      "name": "BuyOnlyWindowHook",
+      "txHash": "0x52d7b1e354c5cbf13b85904f27028908ee58371563d665e4e9b9dce9c2b6bd0a",
+      "abiHash": "da62f4d391653b0b46f20d5bb1f25c872d1f3c810e4c78fad4efe1561ef1f0d2",
+      "address": "0x42e94ee3505bcccace2e825092fc0877bbd61080",
+      "blockNumber": 11791332,
+      "creationCodeHash": "da86ee6217e39244d252017af036bec533df72565a70f18d3defab94b79ad2d6"
+    }
+  ],
+  "sourceCommit": "05ca781a8b9b5bc3b70c41c3ed239a79b00ec8c2",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "6a59986ab05057f72e01d56b678f1a8511a91bfffbdf1aa22b8885a287f56dba"
+}

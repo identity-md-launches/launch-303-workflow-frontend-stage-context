@@ -1,0 +1,126 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "Oneway Launch home":
+    - /url: "#main"
+    - text: oneway / launch
+  - navigation "Page sections":
+    - link "The pool":
+      - /url: "#pool"
+    - link "How it works":
+      - /url: "#about"
+  - text: Sepolia testnet
+  - button "Connect wallet"
+- main:
+  - paragraph: An experiment in launch-time trading
+  - heading "Oneway Launch." [level=1]
+  - paragraph: One fixed window. All of it on-chain.
+  - strong: OWLN / ETH
+  - text: Uniswap v4 · 0.3% pool fee
+  - alert
+  - alert
+  - region "The launch window":
+    - paragraph: The launch window
+    - text: Two-way trading open
+    - heading "The window is complete." [level=2]
+    - strong: "0"
+    - text: blocks remaining
+    - paragraph: The hook now allows swaps in both directions.
+    - progressbar "Buy-only window elapsed"
+    - text: Pool initialized 300 blocks Both ways open Current block
+    - strong: 11,791,734
+    - text: Sells open at
+    - strong: 11,791,632
+    - text: Window rules
+    - strong: Fixed. No admin.
+  - region "Pool readings":
+    - paragraph: Pool price Spot
+    - strong: 50,000,000
+    - text: OWLN per ETH
+    - paragraph: Hook fee
+    - strong: 0%
+    - text: Both directions
+    - paragraph: Total supply
+    - strong: 1,000,000,000
+    - text: OWLN · fixed supply
+  - text: Updated 0s ago · RPC reading
+  - button "Refresh pool"
+  - complementary:
+    - strong: Know the window before you buy.
+    - paragraph: Blocking sells is the mechanism honeypots use. Here, it is a disclosed, fixed 300-block test (about an hour on Sepolia), visible on-chain before buying. Sells through this pool are blocked until the opening block. Liquidity can be removed at any time.
+  - region "Trade the pool":
+    - heading "Trade the pool" [level=2]
+    - text: Uniswap v4
+    - group "Trade direction":
+      - button "Buy OWLN" [pressed]
+      - button "Sell OWLN"
+    - paragraph: The fixed window has ended. Buys and sells are open.
+    - text: You pay
+    - textbox "You pay":
+      - /placeholder: "0.00"
+    - text: ETH
+    - paragraph: "Balance: connect wallet"
+    - text: Estimated receive
+    - strong: —
+    - text: OWLN
+    - paragraph: Enter an amount to get a live quote.
+    - text: Slippage tolerance
+    - textbox "Slippage tolerance": "0.5"
+    - text: "%"
+    - paragraph: 0.01–5%. Your minimum received is enforced on-chain.
+    - alert
+    - button "Connect wallet to trade"
+    - status
+    - paragraph: Sepolia test assets only. Network gas fees apply. Quotes include the pool fee. The hook charges no fee.
+  - region "How the window works":
+    - paragraph: Simple rules, visible state
+    - heading "How the window works" [level=2]
+    - text: No owner. No reset.
+    - article:
+      - text: "01"
+      - heading "The pool opens" [level=3]
+      - paragraph: Initialization starts a 300-block window for this ETH pool. The opening block is recorded by the hook.
+    - article:
+      - text: "02"
+      - heading "Buys go one way" [level=3]
+      - paragraph: You can swap ETH for OWLN. OWLN-to-ETH swaps revert while the current block is below the opening block.
+    - article:
+      - text: "03"
+      - heading "Both directions unlock" [level=3]
+      - paragraph: At the opening block, sells become possible. No admin can shorten, extend, pause, or restart this window.
+  - region "Follow the on-chain evidence":
+    - heading "Follow the on-chain evidence" [level=2]
+    - text: Read it yourself
+    - heading "WindowSet event" [level=3]
+    - paragraph:
+      - text: The hook set the opening block to
+      - strong: 11,791,632
+      - text: .
+    - link "Initialization at block 11,791,332 ↗":
+      - /url: https://sepolia.etherscan.io/tx/0x52d7b1e354c5cbf13b85904f27028908ee58371563d665e4e9b9dce9c2b6bd0a
+    - paragraph: The countdown uses the hook’s views. The price comes from StateView, not a trading quote.
+    - heading "Deployed contracts" [level=3]
+    - link "OWLN":
+      - /url: https://sepolia.etherscan.io/address/0x6962c22809a04681907e7f7e0281879900d5f0be
+    - code: "0x6962c22809a04681907e7f7e0281879900d5f0be"
+    - link "BuyOnlyWindowHook":
+      - /url: https://sepolia.etherscan.io/address/0x42e94ee3505bcccace2e825092fc0877bbd61080
+    - code: "0x42e94ee3505bcccace2e825092fc0877bbd61080"
+    - link "PoolManager":
+      - /url: https://sepolia.etherscan.io/address/0xe03a1074c86cfedd5c142c4f04f1a1536e203543
+    - link "StateView":
+      - /url: https://sepolia.etherscan.io/address/0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c
+    - link "Quoter":
+      - /url: https://sepolia.etherscan.io/address/0x61b3f2011a92d183c7dbadbda940a7555ccf9227
+    - link "UniversalRouter":
+      - /url: https://sepolia.etherscan.io/address/0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b
+    - link "Permit2":
+      - /url: https://sepolia.etherscan.io/address/0x000000000022d473030f116ddee9f6b43ac78ba3
+    - link "PositionManager":
+      - /url: https://sepolia.etherscan.io/address/0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4
+    - group: Pool details and deployment record
+- contentinfo:
+  - text: oneway / an on-chain experiment
+  - link "Get Sepolia ETH ↗":
+    - /url: https://cloud.google.com/application/web3/faucet/ethereum/sepolia
+  - text: Testnet only · Sepolia

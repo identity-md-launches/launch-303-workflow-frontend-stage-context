@@ -1,0 +1,46 @@
+[
+  {
+    "path": "",
+    "status": 200
+  },
+  {
+    "path": "assets/index-qtP6OW4d.css",
+    "status": 200
+  },
+  {
+    "path": "assets/index-D7g-Ted-.js",
+    "status": 200
+  },
+  {
+    "path": "imd-deployment.json",
+    "status": 200
+  },
+  {
+    "path": "favicon.svg",
+    "status": 200
+  },
+  {
+    "path": "abi/OWLN.json",
+    "status": 200
+  },
+  {
+    "path": "abi/BuyOnlyWindowHook.json",
+    "status": 200
+  },
+  {
+    "path": "abi/StateView.json",
+    "status": 200
+  },
+  {
+    "path": "abi/V4Quoter.json",
+    "status": 200
+  },
+  {
+    "path": "abi/UniversalRouter.json",
+    "status": 200
+  },
+  {
+    "path": "abi/Permit2.json",
+    "status": 200
+  }
+]
